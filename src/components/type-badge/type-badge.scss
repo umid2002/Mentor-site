@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables.scss";
+
+.type-badge{
+  display: inline-block;
+  padding: 5px 16px;
+
+  background-color: #F2F4FF;
+  color: $blue;
+
+  border-radius: $border;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+}
+.like{
+  padding: 9px;
+  width: 40px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

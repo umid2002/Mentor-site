@@ -1,0 +1,45 @@
+@import '../../assets/scss/variables';
+
+
+
+.list{
+  display: flex;
+  align-items: center;
+  padding: 28px 32px;
+  background-color: white;
+  border-radius: $border;
+  margin-bottom: 20px;
+}
+.list-about{
+  margin-left: 40px;
+}
+.list-title{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3A4374;
+  margin-bottom: 4px;
+}
+.list-subtitle{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+  margin-bottom: 12px;
+}
+.comment{
+  margin-left: auto;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.222222px;
+  color: #3A4374;
+}

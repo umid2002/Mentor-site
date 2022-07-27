@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables.scss";
+
+
+.main-btn{
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F2F4FE;
+  background: #AD1FEA;
+  border-radius: $border;
+  padding: 12px 24px;
+  border: none;
+}

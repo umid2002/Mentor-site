@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables.scss";
+
+header{
+  width: 100%;
+  margin-bottom: 24px;
+}
+.header-nav{
+  width: 825px;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px 14px 24px;
+  background-color: #373F68;
+  border-radius: $border;
+}
+.header-nav__title{
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #FFFFFF;
+}
+.header-nav__count{
+  margin-right: 5px;
+}
