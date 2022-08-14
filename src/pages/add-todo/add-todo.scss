@@ -1,0 +1,97 @@
+.link-home{
+  display: flex;
+  align-items: center;
+  margin-top: 94px;
+  margin-bottom: 68px;
+}
+.add-modal{
+  margin: auto;
+  width: 540px;
+}
+.add-todo__modal{
+  padding: 52px 42px 40px 42px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.feedback-modal{
+  display: flex;
+  flex-direction: column;
+}
+.feedback-label{
+  display: flex;
+  flex-direction: column;
+}
+.modal-title{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: #3A4374;
+  margin-bottom: 40px;
+}
+.feedback-title{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: #3A4374;
+  margin-bottom: 2px;
+}
+.feedback-subtitle{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  margin-bottom: 16px;
+}
+.feedback-title__input{
+  background: #F7F8FD;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3A4374;
+  border: none;
+  padding: 13px 26px;
+  max-height: 100px;
+  max-width: 456px;
+}
+.feedback-buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+.add-cancel{
+  margin-right: 16px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  color: #F2F4FE;
+  background-color: #3A4374;
+  border-radius: 10px;
+  border: none;
+}
+.add-feedback{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  color: #F2F4FE;
+  background-color: #AD1FEA;
+  border-radius: 10px;
+  border: none;
+}

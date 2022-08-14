@@ -1,14 +1,15 @@
+import { useContext } from "react";
+import { TodosContext } from "../../contexts/todos-contexts";
 import List from "../list/list";
 
 import "./product.scss";
 
-const Product = ({ listTodo, data, setData }) => {
+const Product = () => {
+  const {filteredTodos} = useContext(TodosContext);
   return (
     <div className="list-wrapper">
-      {data.map((todo) => (
-        <>
+      {filteredTodos?.map((todo) => (
           <List key={todo.id} todo={todo} />
-        </>
       ))}
     </div>
   );

@@ -3,21 +3,23 @@ import { Link, useParams } from "react-router-dom";
 import MainBtn from "../../components/main-button/main-button";
 import List from "../../components/list/list";
 import ListComment from "../../components/list-comment/list-comment";
-
-const Todo = ( { data } ) => {
+import "./todo.scss"
+import { useContext } from "react";
+import { TodosContext } from "../../contexts/todos-contexts";
+const Todo = () => {
+  const {filteredTodos} = useContext(TodosContext);
   const { id } = useParams();
 
-  const insideData = data.find((item) => {
+  const insideData = filteredTodos.find((item) => {
     return item.id === +id
   })
-  console.log(insideData);
 
   return(
   <Container>
       <div className="todo">
         <div className="todo-header">
           <Link to="/">Go Back</Link>
-          <MainBtn className="edit-todo">Edit Feedback</MainBtn>
+          <Link to="#!" className="edit-todo">Edit Feedback</Link>
         </div>
         <section className="todo-section">
           <List todo={insideData} />
