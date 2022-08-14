@@ -1,6 +1,5 @@
 import Container from "../../components/container/container";
 import { Link, useParams } from "react-router-dom";
-import MainBtn from "../../components/main-button/main-button";
 import List from "../../components/list/list";
 import ListComment from "../../components/list-comment/list-comment";
 import "./todo.scss"

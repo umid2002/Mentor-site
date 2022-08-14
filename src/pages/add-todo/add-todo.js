@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Container from "../../components/container/container";
 import { AiOutlineLeft } from "react-icons/ai";
 import "./add-todo.scss";
