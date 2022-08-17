@@ -34,7 +34,7 @@ const TodosProvider = (props) => {
   const [typeFilterLinks, setTypeFilterLinks] = useState(typeFilter);
   const [todos, setTodos] = useState(array);
   const [filteredTodos, setFilteredTodos] = useState(array)
-
+  
   return(
     <TodosContext.Provider value={{todos, setTodos, filteredTodos, setFilteredTodos, typeFilterLinks, setTypeFilterLinks}} {...props}>
     </TodosContext.Provider>

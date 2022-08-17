@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Container from "../../components/container/container";
 import { AiOutlineLeft } from "react-icons/ai";
 import "./add-todo.scss";
@@ -7,10 +7,11 @@ import { useContext } from "react";
 import { TodosContext } from "../../contexts/todos-contexts";
 
 const AddTodo = () => {
-  const {filteredTodos, setFilteredTodos} = useContext(TodosContext);
+  const {filteredTodos, setFilteredTodos, setTodos, todos} = useContext(TodosContext);
   const titleInput = useRef();
   const categoryInput = useRef();
   const subtitleInput = useRef();
+  const navigate = useNavigate();
   const handleFormSubmit = (evt) => {
     evt.preventDefault()
     const titleValue = titleInput.current.value;
@@ -24,8 +25,9 @@ const AddTodo = () => {
       status: "suggestion",
       description: subtitleValue
      }
-     setFilteredTodos(newTodo, ...filteredTodos)
-     
+     setTodos([newTodo, ...todos]) // sortByTypeda todosdan filter qilgani uchun todosga qo`shish kerak.
+     setFilteredTodos([newTodo, ...filteredTodos]);
+     navigate("/")
   }
   return (
     <section className="add-todo">

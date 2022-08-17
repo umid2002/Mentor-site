@@ -10,6 +10,7 @@ import Login from './pages/login/login';
 import NotFound from './pages/not-found/not-found';
 import TodosProvider from './contexts/todos-contexts';
 import AddTodo from './pages/add-todo/add-todo';
+import Edit from './pages/edit.edit';
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path='*' element={<NotFound />} />
         <Route path="/add-todo" element={<AddTodo />} />
+        <Route path="/edit/:id" element={<Edit />} />
       </Routes>
     </TodosProvider>
   );

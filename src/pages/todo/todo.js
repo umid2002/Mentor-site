@@ -18,7 +18,7 @@ const Todo = () => {
       <div className="todo">
         <div className="todo-header">
           <Link to="/">Go Back</Link>
-          <Link to="#!" className="edit-todo">Edit Feedback</Link>
+          <Link to={"/edit/" + insideData.id} className="edit-todo">Edit Feedback</Link>
         </div>
         <section className="todo-section">
           <List todo={insideData} />

@@ -2,7 +2,6 @@ import "./list-comment.scss";
 import lady from "../../assets/img/user-lady.png"
 const ListComment = ({ todo }) => {
   const { comments } = todo;
-  console.log(comments[0].user.image);
   return (
     <div className="comments">
       <p className="comments-count">{comments ? comments.length + " Comments" : null}</p>
